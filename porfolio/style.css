@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans&family=Fira+Code&family=Fuggles&family=Montserrat:ital,wght@1,600&family=Mooli&family=Ubuntu:ital,wght@1,500&display=swap');@import url('https://fonts.googleapis.com/css2?family=Encode+Sans&family=Fira+Code&family=Fuggles&family=Montserrat:wght@200&family=Mooli&family=Ubuntu:ital,wght@1,500&display=swap');
+body{
+    margin: 0;
+    background-color:black;
+    color: white;
+}
+/*first step*/
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    background-color: black;
+    color: white;
+    position: sticky;
+    top: 0;
+    
+}
+.navbar-left{
+    padding-left: 180px;
+}
+.navbar-right{
+    padding-right: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.navbar-right a{
+    text-decoration: none;
+    color: white;
+}
+.a-tag{
+   padding: 10px; 
+}
+/*home*/
+.home{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 90vh;
+    /*border: 2px solid orangered;*/
+}
+.home-left{
+    width: 50vw;
+    padding-left: 200px;
+}
+.home-right{
+    width: 150px;      /* Width of the image */
+    height: 180px;     /* Height of the image */
+   padding-right: 200px;
+
+}
+img{
+    width:150%;
+    height: 130%;
+    border-radius: 50%;
+    object-fit: cover;
+    
+    
+}
+.home-h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+}
+.home-p{
+    font-family: 'Encode Sans', sans-serif;
+    font-size: 20px;
+}
+.services{
+    padding: 30px;
+    text-align: center;
+}
+.services-h1{
+  /*font-family: 'Ubuntu', sans-serif;*/
+  color: white;
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+.services-sub-content{
+    display: flex;
+    flex-direction: row;
+   
+}
+.services-card{
+    border: 2px solid white;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+}
+.services-card:hover{
+    background-color:green;
+}
+.serv-h1{
+    font-family: 'Montserrat', sans-serif;
+}
+.serv-p{
+    font-family: 'Encode Sans', sans-serif;
+}
+.contact{
+    text-align: center;
+}
+.contact-info{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+}
+.social-icons i{
+    color: white;
+    padding: 10px;
+    font-size: 50px;
+}
+.services-card i{
+    font-size: 50px;
+}

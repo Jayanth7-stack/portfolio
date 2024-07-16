@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+      <meta charset="UTF-8">
+      <meta name="description" content="Free Web tutorials">
+      <meta name="keywords" content="HTML, CSS, JavaScript">
+      <!--html responsive...viewport-->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Form</title>
+      <style>
+
+           form{
+
+            padding-left: 34%;
+            padding-right: 50%;
+            padding-top: 7%;
+            padding-bottom: 12%;
+            background-image: url(pexels3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: right;
+            
+           }
+           fieldset{
+            width: 300px;
+            height: 450px;
+           /* background-image: url(pexels3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;*/
+            background-color: rgba(214, 221, 227, 0.955);
+           }
+           .class1{
+            display: flex;
+            gap: 115px;
+           }
+           
+           .name{
+            display: flex;
+            gap: 50px;
+           }
+           
+           .bttn2:hover{
+            background: #d34da2;
+            box-shadow: 0 0 5px #d34da2, 0 0 25px #d34da2, 0 0 50px #d34da2, 0 0 200px #d34da2;
+        }
+           
+           .bttn2:hover::after{
+            width: 100%;
+           }
+      </style>
+      </head>
+      <body>
+      <!--An HTML form is used to collect user input. The user input is most often sent to a server for processing.-->
+       <form>
+        <fieldset >
+            
+           <h1 style="color: rgb(168, 190, 226);"><center><strong>Register</strong></center></h1> <br>
+        <div class="name">
+            <div>
+        <label for="firstname">Firstname :</label><br>
+        <input type="firstname" placeholder="firstname" style="width: 163px; height: 20px;"><br></div>
+        <div>
+        <label for="lastname">Lastname :</label><br>
+        <input type="lastname" placeholder="lastname" style="width: 150px; height: 20px;"><br>
+         </div>
+      </div>
+        <label for="email">Email</label><br>
+        <input type="email" inputmode="email" placeholder="email"><br>
+        <label for="phone">Mobile Number</label><br>
+        <input type="tel" placeholder="Mobile Number" style="height: 20px;"><br>
+        <div class="class1">
+            <div>
+            <label for="Country">Nationality :</label><br>
+            <select id="country" name="country" style="height: 20px;">
+                <option value="choose one among">Choose below</option>
+                <option value="India">Inida</option>
+                <option value="United States">United States</option>
+                <option value="China">China</option>
+            </select><br>
+        </div>
+        <div>
+            <label for="Gender">Gender :</label><br>
+            <select id="Gender" name="Gender" style="height: 20px;">
+                <option value="choose one among"> Choose below</option>
+                <option value="Male"> Male</option>
+                <option value="Female"> Female</option>
+
+            </select><br>
+        </div>
+        </div>
+        <div class="dob">
+          <label for="date">DOB:</label><br>
+          <input type="date" placeholder="dd-mm-yyyy" style="height: 20px;"><br>
+
+
+        </div>
+        <div>
+           <label for="Adress">Address:</label><br>
+           <textarea id="Adress" rows="3" cols="50"></textarea>
+
+
+        </div>
+        <!--check box-->
+        <input type="checkbox" id="html" name="html" value="HTML">
+        <label for="html">Accept our terms and conditions</label><br>
+        
+       <!-- <input type="checkbox" id="css" name="css" value="CSS">
+        <label for="css" >CSS</label><br>
+        <input type="checkbox" id="javascript" name="javascript" value="JAVASCRIPT">
+        <label for="javascript">JAVASCRIPT</label><br>-->
+        <br>
+        <center><button type="submit" onclick="alert('Sign up succesfull')" class="bttn2" style="width: 100px; height: 30px;">Sign Up</button></center>
+        
+    </fieldset>
+       </form>
+
+      </body>
+      </html>

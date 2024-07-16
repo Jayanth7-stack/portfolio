@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+      <meta charset="UTF-8">
+      <meta name="description" content="Free Web tutorials">
+      <meta name="keywords" content="HTML, CSS, JavaScript">
+      <!--html responsive...viewport-->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Form</title>
+      <style>
+           
+      
+
+           form{
+
+            padding-left: 35%;
+            padding-right: 50%;
+            padding-top: 7%;
+            padding-bottom: 10%;
+           
+            background-image: url(backgrnd3.webp);
+           background-repeat: no-repeat;
+           background-size: cover;
+           background-position: center;
+          height: 100%;
+        
+            
+           }
+           fieldset{
+                   width: 350px;
+                   height: 400px;
+                 background-image: url(backgrnd3.webp);
+                 background-repeat: no-repeat;
+           background-size: cover;
+           background-position: center;
+           }
+    
+           .button{
+
+                 padding-left: 120px;
+                 box-sizing: var(100%);
+           }
+           .b1{
+            background-color: rgb(40, 175, 40);
+            width: 30%;height: 30px;
+           }
+           .b1:hover{
+            background: rgb(0, 42, 255);
+            box-shadow: 0 0 5px rgb(0, 42, 255), 0 0 25px rgb(0, 42, 255), 0 0 50px rgb(0, 42, 255), 0 0 200px rgb(0, 42, 255);
+           }
+           .title{
+            padding-top: 0px;
+            text-align: center;
+            color: rgb(52, 16, 150);
+           }
+           .email{
+                  text-align: left;
+                  padding-left: 50px;
+                  color: rgb(6, 28, 28);
+
+           }
+           
+          .passwd{
+
+                   text-align: left;
+                  padding-left: 50px;
+                  color: rgb(6, 28, 28);
+
+          }
+      </style>
+      </head>
+      <body>
+      <!--An HTML form is used to collect user input. The user input is most often sent to a server for processing.-->
+       <form>
+        <fieldset>
+          <div class="background">
+          <div class="title"> <center><h1 ><strong>Login</strong></h1></center> <br></div> 
+          <div class="email">
+        <label for="firstname">Username or Emial ID:</label><br>
+        <input type="firstname" inputmode="email" placeholder="Enter your Username" style="width: 210px; height: 30px; border-radius: 25px;"></div><br>
+       <div class="passwd"> <label for="lastname" >Password:</label><br>
+        <input type="lastname" placeholder="Enter your Password" style="width: 210px; height: 30px; border-radius: 25px;"><br>
+        <p ><a href="#" style="text-decoration: none; color: rgb(42, 29, 37);">Forgot Your Password?</a></p>
+        <input type="checkbox" id="html" name="html" value="HTML">
+        <label for="html">Accept our terms and conditions</label>
+      </div><br><br>
+
+        <!--
+        <input type="checkbox" id="html" name="html" value="HTML">
+        <label for="html">Accept our terms and conditions</label><br><br>check box-->
+        
+       <!-- <input type="checkbox" id="css" name="css" value="CSS">
+        <label for="css" >CSS</label><br>
+        <input type="checkbox" id="javascript" name="javascript" value="JAVASCRIPT">
+        <label for="javascript">JAVASCRIPT</label><br>-->
+        <div class="button">
+        <button class="b1" type="submit" onclick="alert('Login in succesfull')">Login</button>
+    </div>
+       <p style="padding-left: 50px; color: rgb(6, 28, 28);">Don't have an account? <b><a href="Register.html" style="text-decoration: none;color: rgb(26, 47, 163); ">Register</a></b></p>
+      </div>
+      </fieldset>
+       </form>
+
+      </body>
+      </html>
